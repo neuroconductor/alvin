@@ -18,3 +18,5 @@ ByteCompile: true
 Type: Package
 Maintainer: John Muschelli <muschellij2@gmail.com>
 VignetteBuilder: knitr
+Url: https://github.com/muschellij2/alvin
+BugReports: https://github.com/muschellij2/alvin/issues
