@@ -20,6 +20,7 @@ Suggests:
     testthat,
     MNITemplate
 Encoding: UTF-8
+Remotes: jfortin1/MNITemplate
 LazyData: true
 ByteCompile: true
 Maintainer: John Muschelli <muschellij2@gmail.com>
