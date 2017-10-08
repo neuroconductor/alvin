@@ -2,18 +2,23 @@ Type: Package
 Package: alvin
 Version: 0.1.0
 Title: 'ALVIN' Atlas
-Description: Automatic lateral ventricle delineation ('ALVIN') atlas.  Provides the atlas and MATLAB m file.
+Description: Automatic lateral ventricle delineation ('ALVIN') atlas.  
+    Provides the atlas and MATLAB m file.  The data is from the
+    lateral segmentation method paper in NeuroImage:
+    <http://dx.doi.org/10.1016/j.neuroimage.2011.06.080>.  
 Authors@R: structure(list(structure(list(given = "John", family = "Muschelli", 
         role = c("aut", "cre"), email = "muschellij2@gmail.com", 
         comment = NULL), .Names = c("given", "family", "role", "email", 
     "comment"))), class = "person")
 License: GPL-3
+Imports: 
+    neurobase
 Suggests: 
     knitr,
     rmarkdown,
     covr,
     testthat,
-    spm12r
+    MNITemplate
 Encoding: UTF-8
 LazyData: true
 ByteCompile: true

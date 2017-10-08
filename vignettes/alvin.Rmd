@@ -1,0 +1,29 @@
+---
+title: "ALVIN Masking"
+author: "John Muschelli"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{ALVIN Masking}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+The ALVIN mask is a 2mm$^{3}$ image in the same space as MNI.  The information about the mask can be found at https://sites.google.com/site/mrilateralventricle/.  
+
+```{r}
+library(alvin)
+library(neurobase)
+mask_fname = alvin_mask()
+mask_fname
+alvin = readnii(mask_fname)
+```
+
+We can read in the ALVIN mask and plot it:
+
+```{r}
+library(MNITemplate)
+mni_fname = MNITemplate::getMNIPath("Brain", res = "2mm")
+mni = readnii(mni_fname)
+ortho2(mni, alvin)
+```

@@ -2,9 +2,15 @@
 % Please edit documentation in R/alvin_mask.R
 \name{alvin_mask}
 \alias{alvin_mask}
+\alias{alvin_image}
 \title{ALVIN Mask}
 \usage{
 alvin_mask()
+
+alvin_image(...)
+}
+\arguments{
+\item{...}{additional arguments to pass to \code{\link{readnii}}}
 }
 \value{
 Path to ALVIN NIfTI image
