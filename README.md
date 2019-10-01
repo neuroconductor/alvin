@@ -20,3 +20,19 @@ You can install `alvin` from GitHub with:
 # install.packages("remotes")
 remotes::install_github("muschellij2/alvin")
 ```
+
+``` r
+library(MNITemplate)
+library(neurobase)
+#> Loading required package: oro.nifti
+#> oro.nifti 0.10.1
+#> Registered S3 method overwritten by 'R.oo':
+#>   method        from       
+#>   throw.default R.methodsS3
+brain = MNITemplate::getMNIPath(what = "Brain", res = "2mm")
+brain = neurobase::readnii(brain)
+alvin = alvin::alvin_image(mm = 2) > 0
+ortho2(brain, alvin)
+```
+
+![](man/figures/README-ex-1.png)<!-- -->
