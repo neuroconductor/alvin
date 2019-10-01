@@ -5,11 +5,13 @@
 \alias{alvin_image}
 \title{ALVIN Mask}
 \usage{
-alvin_mask()
+alvin_mask(mm = c("2", "1", "0.5"))
 
-alvin_image(...)
+alvin_image(mm = c("2", "1", "0.5"), ...)
 }
 \arguments{
+\item{mm}{The resolution for the MNI template to correspond to.}
+
 \item{...}{additional arguments to pass to \code{\link{readnii}}}
 }
 \value{
@@ -20,4 +22,7 @@ ALVIN Mask
 }
 \examples{
 alvin_mask()
+alvin_mask(mm = 1)
+alvin_mask(mm = 0.5)
+alvin_image()
 }

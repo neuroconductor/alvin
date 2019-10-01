@@ -1,5 +1,5 @@
 ---
-  output: github_document
+output: github_document
 ---
 
 [![Travis build status](https://travis-ci.org/muschellij2/alvin.svg?branch=master)](https://travis-ci.org/muschellij2/alvin)
@@ -24,4 +24,14 @@ You can install `alvin` from GitHub with:
 ```{r gh-installation, eval = FALSE}
 # install.packages("remotes")
 remotes::install_github("muschellij2/alvin")
+```
+
+
+```{r ex}
+library(MNITemplate)
+library(neurobase)
+brain = MNITemplate::getMNIPath(what = "Brain", res = "2mm")
+brain = neurobase::readnii(brain)
+alvin = alvin::alvin_image(mm = 2) > 0
+ortho2(brain, alvin)
 ```

@@ -1,7 +1,7 @@
 Type: Package
 Package: alvin
-Version: 0.1.0
-Title: 'ALVIN' Atlas
+Version: 0.2.0
+Title: 'ALVIN' Ventricle Atlas
 Description: Automatic lateral ventricle delineation ('ALVIN') atlas.  
     Provides the atlas and MATLAB m file.  The data is from the
     lateral segmentation method paper in NeuroImage:
@@ -23,7 +23,7 @@ Encoding: UTF-8
 Remotes: jfortin1/MNITemplate
 LazyData: true
 ByteCompile: true
-Maintainer: John Muschelli <muschellij2@gmail.com>
 VignetteBuilder: knitr
 BugReports: https://github.com/muschellij2/alvin/issues
-RoxygenNote: 6.0.1.9000
+RoxygenNote: 6.1.1
+biocViews: atlas, atlases, AnnotationData
