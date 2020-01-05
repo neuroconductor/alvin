@@ -27,6 +27,7 @@ environment:
     WARNINGS_ARE_ERRORS: 1.0
     USE_RTOOLS: yes
     R_CHECK_INSTALL_ARGS: --install-args=--build --no-multiarch
+    R_REMOTES_NO_ERRORS_FROM_WARNINGS: true        
 deploy:
   provider: GitHub
   description: Windows Binary
