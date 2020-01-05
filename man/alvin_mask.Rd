@@ -25,4 +25,10 @@ alvin_mask()
 alvin_mask(mm = 1)
 alvin_mask(mm = 0.5)
 alvin_image()
+testthat::expect_equal(
+dim(alvin_image(1, read_data = FALSE)),
+c(182L, 218L, 182L))
+testthat::expect_equal(
+dim(alvin_image(0.5, read_data = FALSE)),
+c(364L, 436L, 364L))
 }

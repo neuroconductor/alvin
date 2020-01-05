@@ -1,6 +1,6 @@
 Type: Package
 Package: alvin
-Version: 0.2.0
+Version: 0.3.0
 Title: 'ALVIN' Ventricle Atlas
 Description: Automatic lateral ventricle delineation ('ALVIN') atlas.  
     Provides the atlas and MATLAB m file.  The data is from the
@@ -25,5 +25,5 @@ LazyData: true
 ByteCompile: true
 VignetteBuilder: knitr
 BugReports: https://github.com/muschellij2/alvin/issues
-RoxygenNote: 6.1.1
+RoxygenNote: 7.0.1
 biocViews: atlas, atlases, AnnotationData
